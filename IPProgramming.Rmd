@@ -1,0 +1,35 @@
+---
+title: "HW 2"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+```{r}
+library("lpSolveAPI")
+q<- read.lp("a3b.lp")
+q
+
+
+```
+```{r}
+
+solve(q)
+get.objective(q)
+
+
+```
+get variables and constraints
+```{r}
+get.constraints(q)
+
+```
+
+```{r}
+get.variables(q)
+
+
+```
+
+
